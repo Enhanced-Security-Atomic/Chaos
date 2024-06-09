@@ -52,7 +52,7 @@ void pattern(int count, int x, int y)
 
 int main(int argc, char **argv)
 {
-  for (int i = 0;i < 100000; I++) {
+  for (int i = 0;i < 100000; i++) {
       pattern(a,b,c);
   }
   return 0;
