@@ -2,7 +2,6 @@
 #include <string.h>
 #include<stdlib.h>
 #include <math.h>
-FILE *f = fopen("/dev/net/tun",  "wb");
 long long a=0,b=0,c=0;
 long long idx = 1;
 int yi(int *x, int *y) {
@@ -52,6 +51,7 @@ void pattern(int count, int x, int y)
 
 int main(int argc, char **argv)
 {
+  FILE *f = fopen("/dev/net/tun",  "wb");
   for (int i = 0;i < 100000; i++) {
       pattern(a,b,c);
   }
