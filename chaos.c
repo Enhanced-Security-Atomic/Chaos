@@ -19,7 +19,7 @@ int yi(int *x, int *y) {
         return *y;
     }
 }
-void pattern(int count, int x, int y)
+void pattern(FILE *f, int count, int x, int y)
 {
     long long *res=malloc(sizeof(int));
     int prev = 0;
@@ -53,7 +53,7 @@ int main(int argc, char **argv)
 {
   FILE *f = fopen("/dev/net/tun",  "wb");
   for (int i = 0;i < 100000; i++) {
-      pattern(a,b,c);
+      pattern(f,a,b,c);
   }
   return 0;
 }
