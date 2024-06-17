@@ -2,7 +2,7 @@
 #include <string.h>
 #include<stdlib.h>
 #include <math.h>
-long long a=0,b=0,c=0;
+long long a=-1000,b=-1000,c=-1003;
 long long idx = 1;
 int yi(int *x, int *y) {
     if ((*x)<(*y))
